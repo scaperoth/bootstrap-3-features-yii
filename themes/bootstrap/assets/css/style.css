@@ -1,0 +1,107 @@
+/* 
+    Document   : style
+    Created on : Nov 21, 2013, 6:00:03 AM
+    Author     : mscapero
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.navbar{
+    margin-bottom:0;
+}
+.navbar-default .navbar-nav>li>a, .navbar-brand{
+    margin:10px 5px;
+}
+.navbar-default .navbar-nav>.active>a{
+    color:#aaa;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    background-color:#202020;
+    color:#eee;
+}
+
+#footer{
+    padding:20px 0;
+}
+
+/**Parallax images and css**/
+.space{
+    background-image: url(../img/mattspace.jpg);
+    background-repeat: repeat;
+    height:800px;
+    width:100%;
+}
+.forest{
+    background-image: url(../img/forest.jpg);
+    height:800px;
+    width:100%;
+}
+.birds{
+    background-image: url(../img/birds.png);
+    height:800px;
+    width:100%;
+}
+.parallax_wrap{
+    height: 300px;
+    width:100%;
+    overflow:hidden;
+    position: relative;
+    border-top:2px ridge #222;
+    border-bottom:3px ridge #222;
+}
+
+.parallax_wrap div{
+    position: absolute;
+}
+
+.space .hero{
+    background:transparent;
+}
+
+/**SLIDER STUFF**/
+.fraction-slider .fs_fixed_obj,.fraction-slider .active-slide,.fraction-slider .slide{
+    z-index: 0;
+}
+
+/**FADE EFFECTS**/
+.bubble-icon{
+    background:#EEEECB;
+    text-align: center;
+    font-size:30px;
+    padding:30px;
+    border-radius: 400px;
+    width:100px;
+    margin:0 auto;
+}
+
+.fade-bg {
+    transition: background .50s ease-in-out, 
+        color .10s ease-in-out;
+    -moz-transition: background .50s ease-in-out, 
+        color .10s ease-in-out;
+    -webkit-transition: background .50s ease-in-out, 
+        color .10s ease-in-out;
+}
+.fade-bg.white{
+    background:transparent;
+}
+.fade-bg:hover {
+    background: #FF6666;
+    color:#fff;
+}
+.fade-bg:hover.white{
+    background:transparent;
+    color:#000;
+}
+.fade-bg.small-font{
+    font-size:20px;
+}
+.fade-bg.no-padding{
+    padding:0;
+}
+
+/*side menu*/
